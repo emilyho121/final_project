@@ -17,38 +17,55 @@
 <img id="image-1" src="assets/1.png">  
 <img id="image-2" src="assets/2.png">  
 <img id="image-3" src="assets/3.png">  
+<img id="image-4" src="assets/4.png">  
 
-<a-mixin id="wall" geometry="primitive: box; height: 30; width: 30; depth: 2" material="color: #333; metalness: 0; roughness: 1" shadow="cast: false; receive: true"></a-mixin>
+<a-mixin id="wall" geometry="primitive: box; height: 30; width: 30; depth: 2" material="color: #000; metalness: 0; roughness: 1" shadow="cast: false; receive: true"></a-mixin>
 </a-assets>
 
 
 
-<a-video src="#myvideo" width="16" height="9" scale="2 2 1" position="0 8 12" rotation="0 180 0"></a-video>
+<!-- <a-video src="#myvideo" width="16" height="9" scale="2 2 1" position="0 8.1 12" rotation="0 180 0"></a-video> -->
+<a-video src="#myvideo" width="16" height="9" scale="2.2 2.2 1" position="0 9 12" rotation="0 180 0" material="" geometry=""></a-video>
 <!-- <a-video src="assets/KC-2018.mp4" width="16" height="9" material="" geometry="" scale="2 2 1" position="0 7 12"></a-video> -->
 
-<a-image src="#image-1" rotation="0 90 0" scale="10 10 10" position="-8.85556 8.17743 -10.00298"></a-image>
-<a-image src="#image-2" rotation="0 -90 0" scale="10 10 10" position="8.83071 8.17743 -10.00298"></a-image>
-<a-image src="#image-3" rotation="0 180 0" scale="10 10 10" position="0.1512 8.17743 -16.89495"></a-image>
+<a-image src="#image-1" rotation="0 90 0" scale="10 10 10" position="-8.8 8.1 -10.5"></a-image>
+<a-image src="#image-2" rotation="0 -90 0" scale="10 10 10" position="8.83 8.1 -10.5"></a-image>
+<a-image src="#image-3" rotation="0 90 0" scale="10 10 10" position="-8.8 8.1 0.5"></a-image>
+<a-image src="#image-4" rotation="0 90 0" scale="10 10 10" position="8.83 8.1 0.5"></a-image>
+<!-- /-----/ -->
 
+<a-text value="
+Hello, there! 
+
+Kevin Chang
+I am a Filmmaker and Content Creator, 
+based in San Francisco and Taiwan" scale="3 3 3" position="-5.60962 8.17743 -16.89495" text="value: Hello, there! 
+
+Kevin Chang
+I am a Filmmaker and Content Creator, 
+based in San Francisco and Taiwan; font: sourcecodepro"></a-text>
+
+
+
+
+<!-- /-----/ -->
 
 <a-entity camera look-controls position="0 6 -5"></a-entity>
 
-
-
-
+<!-- /-----/ -->
 <a-entity position="0 8.4 -8">
 <a-entity light="color: #AAA; type: ambient"></a-entity>
 
-<a-entity geometry="primitive: sphere; radius: 0.15" material="color: #FAFAFA; shader: flat" 
+<!-- <a-entity geometry="primitive: sphere; radius: 0.15" material="color: #FAFAFA; shader: flat" 
 light="castShadow: true; color: #FAFAFA; intensity: 0.5; shadowBias: 0.01 shadowCameraNear: 1; type: point; shadowMapWidth: 1024; shadowMapHeight: 1024" 
 position="0 -1 1" animation="property: scale; to: 2 2 2; dur: 3000; dir: alternate; loop: true" 
-animation="property: intensity; to: 1; dur: 3000; dir: alternate; loop: true"></a-entity>
+animation="property: intensity; to: 1; dur: 3000; dir: alternate; loop: true"></a-entity> -->
 
 <a-entity animation="property: rotation; to: 0 360 360; dur: 5000; easing: linear; loop: true">
 
-<a-entity geometry="primitive: sphere; radius: 0.25" material="color: #EF2D5E; shader: flat" 
+<!-- <a-entity geometry="primitive: sphere; radius: 0.25" material="color: #EF2D5E; shader: flat" 
 light="castShadow: true; color: #EF2D5E; intensity: 1; shadowBias: 0.01 shadowCameraNear: 1; type: point; shadowMapWidth: 1024; shadowMapHeight: 1024" 
-position="0 5 5"></a-entity>
+position="0 5 5"></a-entity> -->
 </a-entity>
 
 <!-- <a-entity geometry="primitive: torusKnot; radius: 4; radiusTubular: 0.1; segmentsRadial: 150; segmentsTubular: 20; p: 17; q: 4;" 
