@@ -13,18 +13,21 @@
 
 
 <a-assets>
-<video id="myvideo" src="assets/test.mov"></video>    
+<video id="myvideo" src="assets/KC-2018.mp4" autoplay loop="true"></video>  
+<img id="image-1" src="assets/1.png">  
+<img id="image-2" src="assets/2.png">  
+<img id="image-3" src="assets/3.png">  
+
 <a-mixin id="wall" geometry="primitive: box; height: 30; width: 30; depth: 2" material="color: #333; metalness: 0; roughness: 1" shadow="cast: false; receive: true"></a-mixin>
 </a-assets>
 
 
-<a-videosphere src="#myvideo"></a-videosphere>
+<!-- <a-video src="#myvideo"></a-videosphere> -->
+<a-video src="assets/KC-2018.mp4" width="16" height="9" material="" geometry="" scale="2 2 1"></a-video>
 
-<a-videosphere src="assets/test.mov"></a-videosphere>
-
-
-
-
+<a-image src="#image-1" material="" geometry="" rotation="0 90 0" scale="10 10 10" position="-8.85556 8.17743 -10.00298"></a-image>
+<a-image src="#image-2" material="" geometry="" rotation="0 -90 0" scale="10 10 10" position="8.83071 8.17743 -10.00298"></a-image>
+<a-image src="#image-3" material="" geometry="" rotation="0 180 0" scale="10 10 10" position="0.1512 8.17743 -16.89495"></a-image>
 
 <a-entity position="0 8.4 -8">
 <a-entity light="color: #AAA; type: ambient"></a-entity>
@@ -59,3 +62,4 @@ animation="property: rotation; dur: 36000; to: 0 360 0; loop: true; easing: line
 </a-scene>
 </body>
 </html>
+
